@@ -7,28 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD51CF3026A40CCB00446D95 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51CF2F26A40CCB00446D95 /* PaletteViewController.m */; };
+		DD51CF3426A40CD400446D95 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51CF3326A40CD400446D95 /* TimerViewController.m */; };
+		DD51CF3D26A41A2000446D95 /* ColorPaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51CF3C26A41A2000446D95 /* ColorPaletteView.m */; };
+		DD56BE7A26A4A18C009726E2 /* UIButton+Highlighted.m in Sources */ = {isa = PBXBuildFile; fileRef = DD56BE7926A4A18C009726E2 /* UIButton+Highlighted.m */; };
 		DD57CA3D26A35ADB00EDE883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57CA3C26A35ADB00EDE883 /* AppDelegate.m */; };
 		DD57CA4026A35ADB00EDE883 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57CA3F26A35ADB00EDE883 /* SceneDelegate.m */; };
-		DD57CA4326A35ADB00EDE883 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57CA4226A35ADB00EDE883 /* ViewController.m */; };
 		DD57CA4626A35ADB00EDE883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD57CA4426A35ADB00EDE883 /* Main.storyboard */; };
 		DD57CA4826A35ADE00EDE883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD57CA4726A35ADE00EDE883 /* Assets.xcassets */; };
 		DD57CA4B26A35ADE00EDE883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD57CA4926A35ADE00EDE883 /* LaunchScreen.storyboard */; };
 		DD57CA4E26A35ADE00EDE883 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57CA4D26A35ADE00EDE883 /* main.m */; };
+		DD57CA5F26A35B4A00EDE883 /* UIColor+UIColorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57CA5B26A35B4A00EDE883 /* UIColor+UIColorCategory.m */; };
+		DD57CA6426A35B7E00EDE883 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57CA6326A35B7E00EDE883 /* CustomButton.m */; };
+		DD57CA6826A35B8E00EDE883 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57CA6726A35B8E00EDE883 /* CanvasView.m */; };
+		DD57CA6D26A35C0F00EDE883 /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57CA6C26A35C0F00EDE883 /* MainScreenViewController.m */; };
+		DD57CA7126A35C2000EDE883 /* DrawingsScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD57CA7026A35C2000EDE883 /* DrawingsScreenViewController.m */; };
+		DD57CA7A26A35CA400EDE883 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD57CA7826A35CA400EDE883 /* Montserrat-Medium.ttf */; };
+		DD57CA7B26A35CA400EDE883 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD57CA7926A35CA400EDE883 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD51CF2E26A40CCB00446D95 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
+		DD51CF2F26A40CCB00446D95 /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
+		DD51CF3226A40CD400446D95 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		DD51CF3326A40CD400446D95 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		DD51CF3B26A41A2000446D95 /* ColorPaletteView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorPaletteView.h; sourceTree = "<group>"; };
+		DD51CF3C26A41A2000446D95 /* ColorPaletteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorPaletteView.m; sourceTree = "<group>"; };
+		DD56BE7826A4A18C009726E2 /* UIButton+Highlighted.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Highlighted.h"; sourceTree = "<group>"; };
+		DD56BE7926A4A18C009726E2 /* UIButton+Highlighted.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Highlighted.m"; sourceTree = "<group>"; };
 		DD57CA3826A35ADB00EDE883 /* rs.ios.stage-task8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rs.ios.stage-task8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD57CA3B26A35ADB00EDE883 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD57CA3C26A35ADB00EDE883 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DD57CA3E26A35ADB00EDE883 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		DD57CA3F26A35ADB00EDE883 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		DD57CA4126A35ADB00EDE883 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD57CA4226A35ADB00EDE883 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DD57CA4526A35ADB00EDE883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD57CA4726A35ADE00EDE883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD57CA4A26A35ADE00EDE883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD57CA4C26A35ADE00EDE883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD57CA4D26A35ADE00EDE883 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD57CA5B26A35B4A00EDE883 /* UIColor+UIColorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColorCategory.m"; sourceTree = "<group>"; };
+		DD57CA5D26A35B4A00EDE883 /* UIColor+UIColorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColorCategory.h"; sourceTree = "<group>"; };
+		DD57CA6226A35B7E00EDE883 /* CustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		DD57CA6326A35B7E00EDE883 /* CustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		DD57CA6626A35B8E00EDE883 /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		DD57CA6726A35B8E00EDE883 /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		DD57CA6B26A35C0F00EDE883 /* MainScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainScreenViewController.h; sourceTree = "<group>"; };
+		DD57CA6C26A35C0F00EDE883 /* MainScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewController.m; sourceTree = "<group>"; };
+		DD57CA6F26A35C2000EDE883 /* DrawingsScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingsScreenViewController.h; sourceTree = "<group>"; };
+		DD57CA7026A35C2000EDE883 /* DrawingsScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingsScreenViewController.m; sourceTree = "<group>"; };
+		DD57CA7826A35CA400EDE883 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		DD57CA7926A35CA400EDE883 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +70,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD51CF2D26A40CAA00446D95 /* ChildViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD51CF2E26A40CCB00446D95 /* PaletteViewController.h */,
+				DD51CF2F26A40CCB00446D95 /* PaletteViewController.m */,
+				DD51CF3226A40CD400446D95 /* TimerViewController.h */,
+				DD51CF3326A40CD400446D95 /* TimerViewController.m */,
+			);
+			path = ChildViewControllers;
+			sourceTree = "<group>";
+		};
 		DD57CA2F26A35ADB00EDE883 = {
 			isa = PBXGroup;
 			children = (
@@ -61,19 +100,74 @@
 		DD57CA3A26A35ADB00EDE883 /* rs.ios.stage-task8 */ = {
 			isa = PBXGroup;
 			children = (
-				DD57CA3B26A35ADB00EDE883 /* AppDelegate.h */,
-				DD57CA3C26A35ADB00EDE883 /* AppDelegate.m */,
-				DD57CA3E26A35ADB00EDE883 /* SceneDelegate.h */,
-				DD57CA3F26A35ADB00EDE883 /* SceneDelegate.m */,
-				DD57CA4126A35ADB00EDE883 /* ViewController.h */,
-				DD57CA4226A35ADB00EDE883 /* ViewController.m */,
+				DD57CA5A26A35B2900EDE883 /* SupportFiles */,
+				DD57CA5926A35B0C00EDE883 /* CustomViews */,
+				DD57CA5826A35AFE00EDE883 /* ViewControllers */,
 				DD57CA4426A35ADB00EDE883 /* Main.storyboard */,
 				DD57CA4726A35ADE00EDE883 /* Assets.xcassets */,
 				DD57CA4926A35ADE00EDE883 /* LaunchScreen.storyboard */,
 				DD57CA4C26A35ADE00EDE883 /* Info.plist */,
 				DD57CA4D26A35ADE00EDE883 /* main.m */,
+				DD57CA7726A35C9300EDE883 /* Fonts */,
+				DD57CA5526A35AEC00EDE883 /* OtherFiles */,
 			);
 			path = "rs.ios.stage-task8";
+			sourceTree = "<group>";
+		};
+		DD57CA5526A35AEC00EDE883 /* OtherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DD57CA3B26A35ADB00EDE883 /* AppDelegate.h */,
+				DD57CA3C26A35ADB00EDE883 /* AppDelegate.m */,
+				DD57CA3E26A35ADB00EDE883 /* SceneDelegate.h */,
+				DD57CA3F26A35ADB00EDE883 /* SceneDelegate.m */,
+			);
+			path = OtherFiles;
+			sourceTree = "<group>";
+		};
+		DD57CA5826A35AFE00EDE883 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD51CF2D26A40CAA00446D95 /* ChildViewControllers */,
+				DD57CA6B26A35C0F00EDE883 /* MainScreenViewController.h */,
+				DD57CA6C26A35C0F00EDE883 /* MainScreenViewController.m */,
+				DD57CA6F26A35C2000EDE883 /* DrawingsScreenViewController.h */,
+				DD57CA7026A35C2000EDE883 /* DrawingsScreenViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DD57CA5926A35B0C00EDE883 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				DD57CA6226A35B7E00EDE883 /* CustomButton.h */,
+				DD57CA6326A35B7E00EDE883 /* CustomButton.m */,
+				DD57CA6626A35B8E00EDE883 /* CanvasView.h */,
+				DD57CA6726A35B8E00EDE883 /* CanvasView.m */,
+				DD51CF3B26A41A2000446D95 /* ColorPaletteView.h */,
+				DD51CF3C26A41A2000446D95 /* ColorPaletteView.m */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		DD57CA5A26A35B2900EDE883 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DD57CA5D26A35B4A00EDE883 /* UIColor+UIColorCategory.h */,
+				DD57CA5B26A35B4A00EDE883 /* UIColor+UIColorCategory.m */,
+				DD56BE7826A4A18C009726E2 /* UIButton+Highlighted.h */,
+				DD56BE7926A4A18C009726E2 /* UIButton+Highlighted.m */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		DD57CA7726A35C9300EDE883 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DD57CA7826A35CA400EDE883 /* Montserrat-Medium.ttf */,
+				DD57CA7926A35CA400EDE883 /* Montserrat-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +228,8 @@
 			files = (
 				DD57CA4B26A35ADE00EDE883 /* LaunchScreen.storyboard in Resources */,
 				DD57CA4826A35ADE00EDE883 /* Assets.xcassets in Resources */,
+				DD57CA7A26A35CA400EDE883 /* Montserrat-Medium.ttf in Resources */,
+				DD57CA7B26A35CA400EDE883 /* Montserrat-Regular.ttf in Resources */,
 				DD57CA4626A35ADB00EDE883 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,10 +241,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD57CA4326A35ADB00EDE883 /* ViewController.m in Sources */,
 				DD57CA3D26A35ADB00EDE883 /* AppDelegate.m in Sources */,
+				DD57CA6D26A35C0F00EDE883 /* MainScreenViewController.m in Sources */,
+				DD51CF3426A40CD400446D95 /* TimerViewController.m in Sources */,
 				DD57CA4E26A35ADE00EDE883 /* main.m in Sources */,
+				DD51CF3026A40CCB00446D95 /* PaletteViewController.m in Sources */,
+				DD57CA6426A35B7E00EDE883 /* CustomButton.m in Sources */,
 				DD57CA4026A35ADB00EDE883 /* SceneDelegate.m in Sources */,
+				DD56BE7A26A4A18C009726E2 /* UIButton+Highlighted.m in Sources */,
+				DD51CF3D26A41A2000446D95 /* ColorPaletteView.m in Sources */,
+				DD57CA7126A35C2000EDE883 /* DrawingsScreenViewController.m in Sources */,
+				DD57CA6826A35B8E00EDE883 /* CanvasView.m in Sources */,
+				DD57CA5F26A35B4A00EDE883 /* UIColor+UIColorCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGCXWM78C4;
 				INFOPLIST_FILE = "rs.ios.stage-task8/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZGCXWM78C4;
 				INFOPLIST_FILE = "rs.ios.stage-task8/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
