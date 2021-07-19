@@ -9,6 +9,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, MainScreenConditions) {
+    Idle,
+    Draw,
+    Done
+} ;
+
 @interface MainScreenViewController : UIViewController
 
 @end

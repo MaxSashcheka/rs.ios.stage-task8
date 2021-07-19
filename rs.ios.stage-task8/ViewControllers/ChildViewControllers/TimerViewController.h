@@ -6,10 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CanvasView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TimerViewController : UIViewController
+
+@property (strong,nonatomic) CanvasView *canvasView;
 
 @end
 

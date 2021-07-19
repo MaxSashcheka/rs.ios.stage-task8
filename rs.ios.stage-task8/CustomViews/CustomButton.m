@@ -60,6 +60,15 @@
     self.layer.shadowRadius = 2;
 }
 
+- (void)setEnabled:(BOOL)enabled {
+    [super setEnabled:enabled];
+    
+    if (enabled) {
+        self.alpha = 1;
+    } else {
+        self.alpha = 0.25;
+    }
+}
 
 - (void)dealloc
 {

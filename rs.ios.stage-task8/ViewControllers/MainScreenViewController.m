@@ -28,6 +28,8 @@
 @property (strong,nonatomic) PaletteViewController *paletteVC;
 @property (strong,nonatomic) TimerViewController *timerVC;
 
+@property (assign,nonatomic) MainScreenConditions screenCurrentCondition;
+
 
 
 @end
@@ -37,13 +39,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.screenCurrentCondition = Idle;
     
 
     [self initializeViews];
     [self navigationControllerSetup];
     [self buttonActionsSetup];
+    [self setIdleCondition];
     
 }
+
+#pragma mark Initializing and setup
 
 - (void)buttonActionsSetup {
     [self.openPaletteButton addTarget:self
@@ -75,8 +81,8 @@
     //CanvasView
     self.canvasView = [[CanvasView alloc] init];
     self.canvasView.frame = CGRectMake(38, 104, 300, 300);
-    
     self.drawingVC.canvasView = self.canvasView;
+    self.timerVC.canvasView = self.canvasView;
     
     [self.view addSubview: self.canvasView];
 
@@ -116,6 +122,37 @@
     
 }
 
+#pragma mark Draw
+
+- (void)startDraw {
+    [self setDoneCondition];
+    self.canvasView.isFirstDraw = NO;
+    [self.canvasView setNeedsDisplay];
+}
+
+
+#pragma mark Share
+
+- (void)share {
+    CGRect boundsRect = [self.canvasView bounds];
+    UIGraphicsBeginImageContext(boundsRect.size);
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [self.canvasView.layer renderInContext:context];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    NSArray *activityItems = @[image];
+    
+    UIActivityViewController *activityViewControntroller = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    activityViewControntroller.excludedActivityTypes = @[];
+    activityViewControntroller.popoverPresentationController.sourceView = self.view;
+    activityViewControntroller.popoverPresentationController.sourceRect = CGRectMake(self.view.bounds.size.width/2, self.view.bounds.size.height/4, 0, 0);
+    
+    [self presentViewController:activityViewControntroller animated:YES completion:nil];
+}
+
+#pragma mark ChildVC setup and open
+
 - (void)openPalleteChildVC {
     
     self.paletteVC = [[PaletteViewController alloc] init];
@@ -145,32 +182,45 @@
                       self.view.frame.size.height / 2 + 40);
 }
 
-- (void)startDraw {
-    self.canvasView.isFirstDraw = NO;
-
-    [self.canvasView setNeedsDisplay];
-}
-
-- (void)share {
-    CGRect boundsRect = [self.canvasView bounds];
-    UIGraphicsBeginImageContext(boundsRect.size);
-    
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    [self.canvasView.layer renderInContext:context];
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    NSArray *activityItems = @[image];
-    
-    UIActivityViewController *activityViewControntroller = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
-    activityViewControntroller.excludedActivityTypes = @[];
-    activityViewControntroller.popoverPresentationController.sourceView = self.view;
-    activityViewControntroller.popoverPresentationController.sourceRect = CGRectMake(self.view.bounds.size.width/2, self.view.bounds.size.height/4, 0, 0);
-    
-    [self presentViewController:activityViewControntroller animated:YES completion:nil];
-}
 
 - (void)goToDrawingVC {
     [self.navigationController pushViewController:self.drawingVC animated:YES];
+}
+
+
+
+
+#pragma mark Conditions
+- (void)setIdleCondition {
+    [self.drawButton setTitle:@"Draw" forState:UIControlStateNormal];
+
+    [self.drawButton setEnabled:YES];
+    [self.shareButton setEnabled:NO];
+    
+    [self.openPaletteButton setEnabled:YES];
+    [self.openTimerButton setEnabled:YES];
+    
+}
+
+- (void)setDrawCondition {
+    
+    [self.drawButton setEnabled:NO];
+    [self.shareButton setEnabled:NO];
+    
+    [self.openPaletteButton setEnabled:NO];
+    [self.openTimerButton setEnabled:NO];
+    
+}
+
+- (void)setDoneCondition {
+    [self.drawButton setTitle:@"Reset" forState:UIControlStateNormal];
+
+    [self.drawButton setEnabled:YES];
+    [self.shareButton setEnabled:YES];
+    
+    [self.openPaletteButton setEnabled:NO];
+    [self.openTimerButton setEnabled:NO];
+    
 }
 
 @end
