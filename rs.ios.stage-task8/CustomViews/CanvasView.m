@@ -27,6 +27,8 @@
             case 4:
                 [self drawLandscape];
                 break;
+            case 5:
+                
                 
             default:
                 break;
@@ -50,6 +52,13 @@
         self.currentCanvasIdentifier = 2;
     }
     return self;
+}
+
+- (void)clearView {
+    UIColor* strokeColor = [UIColor colorWithRed: 0 green: 0 blue: 0 alpha: 1];
+    UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(0, 0, 300, 300)];
+
+    [strokeColor setStroke];
 }
 
 

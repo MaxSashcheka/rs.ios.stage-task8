@@ -61,7 +61,7 @@
                    forControlEvents:UIControlEventTouchUpInside];
     
     [self.drawButton addTarget:self
-                             action:@selector(startDraw)
+                        action:@selector(startDraw:)
                    forControlEvents:UIControlEventTouchUpInside];
     
     [self.shareButton addTarget:self
@@ -124,8 +124,14 @@
 
 #pragma mark Draw
 
-- (void)startDraw {
-    [self setDoneCondition];
+- (void)startDraw:(UIButton*) sender {
+    if ([sender.titleLabel.text isEqualToString:@"Reset"]) {
+        self.canvasView.currentCanvasIdentifier = 5;
+        [self setIdleCondition];
+    } else {
+        [self setDoneCondition];
+
+    }
     self.canvasView.isFirstDraw = NO;
     [self.canvasView setNeedsDisplay];
 }
